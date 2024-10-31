@@ -48,10 +48,10 @@ const Hero = () => {
       <div className="flex mt-4 relative justify-end">
         <div className="absolute left-1/2 md:left-auto  -translate-x-1/2 md:translate-x-0 w-[270px] h-[270px] sm:w-[320px] sm:h-[320px]    opacity-40 blur  rounded-full bg-primary -z-20 top-0 " />
         <Image
-          src={"/profile.jpg"}
+          src={"/my.jpg"}
           width={320}
           height={320}
-          className="rounded-full mx-auto md:mx-0 w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] border-2 ring-4 ring-primary ring-offset-4 ring-offset-background object-fill"
+          className="rounded-full mx-auto md:mx-0 w-[250px] h-[250px] sm:w-[300px] sm:h-[300px] border-2 ring-4 ring-primary ring-offset-4 ring-offset-background object-cover"
           alt={"profile"}
         />
         <Square className="size-6 absolute -top-8 text-muted-foreground rotate-6 right-[180px]" />
