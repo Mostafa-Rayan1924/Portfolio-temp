@@ -31,7 +31,7 @@ const Project = () => {
                 className="w-full h-[300px] object-cover rounded-lg cursor-pointer ring-4 ring-primary ring-offset-4 ring-offset-primary-20"
               />
             </DialogTrigger>
-            <DialogContent className="max-w-4xl p-0 m-0 overflow-hidden sm:max-w-5xl h-fit bg-card rounded-lg shadow-lg">
+            <DialogContent className="max-w-4xl p-0 m-0  sm:max-w-5xl h-[80vh] overflow-y-scroll bg-card rounded-lg shadow-lg">
               <DialogHeader className="bg-card p-6 flex justify-between items-center border-b">
                 <h3 className="text-xl font-semibold">{item.name}</h3>
                 <button className="text-gray-500 hover:text-red-500"></button>
@@ -63,7 +63,7 @@ const Project = () => {
                   <p className="border-b pb-6 text-muted-foreground capitalize">
                     {item.desc}
                   </p>
-                  <div className="flex border-b pb-6 flex-col w-[60%] gap-3">
+                  <div className="flex border-b pb-6 flex-col w-[90%] sm:w-[60%] gap-3">
                     <div className="flex items-center justify-between ">
                       <h4 className="flex items-center text-muted-foreground  text-sm gap-1 ">
                         <PaintBucket />
@@ -85,7 +85,7 @@ const Project = () => {
                         <Tags />
                         Tags:
                       </h4>
-                      <div className="flex gap-1">
+                      <div className="flex items-center flex-wrap gap-1">
                         {item.techs.map((item) => (
                           <span className="border rounded-md p-1 text-sm">
                             {item}
@@ -95,12 +95,12 @@ const Project = () => {
                     </div>
                   </div>
 
-                  <div className="flex gap-4 mt-4">
+                  <div className="flex items-center flex-wrap  gap-4 mt-4">
                     <a
                       href={item.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={buttonVariants({ size: "lg" })}>
+                      className={`px-4 sm:px-6 py-2 bg-primary flex items-center gap-1 rounded-lg`}>
                       <Eye className="size-4" />
                       View Demo
                     </a>
@@ -108,10 +108,7 @@ const Project = () => {
                       href={item.sourceCodeLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={buttonVariants({
-                        size: "lg",
-                        variant: "outline",
-                      })}>
+                      className={`px-4 sm:px-6 py-[10px] bg-background flex items-center gap-1 rounded-lg`}>
                       <Github className="size-4" />
                       Source Code
                     </a>
