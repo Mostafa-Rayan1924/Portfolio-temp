@@ -31,7 +31,7 @@ const Project = () => {
                 className="w-full h-[300px] object-cover rounded-lg cursor-pointer ring-4 ring-primary ring-offset-4 ring-offset-primary-20"
               />
             </DialogTrigger>
-            <DialogContent className="max-w-4xl p-0 m-0  sm:max-w-5xl h-[80vh] overflow-y-scroll bg-card rounded-lg shadow-lg">
+            <DialogContent className="max-w-4xl p-0 m-0  sm:max-w-5xl h-[80vh] overflow-y-auto bg-card rounded-lg shadow-lg">
               <DialogHeader className="bg-card p-6 flex justify-between items-center border-b">
                 <h3 className="text-xl font-semibold">{item.name}</h3>
                 <button className="text-gray-500 hover:text-red-500"></button>
@@ -108,7 +108,7 @@ const Project = () => {
                       href={item.sourceCodeLink}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`px-4 sm:px-6 py-[10px] bg-background flex items-center gap-1 rounded-lg`}>
+                      className={`px-4 sm:px-6 py-[10px] text-white bg-background flex items-center gap-1 rounded-lg`}>
                       <Github className="size-4" />
                       Source Code
                     </a>
