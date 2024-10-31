@@ -100,7 +100,7 @@ const Project = () => {
                       href={item.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className={`px-4 sm:px-6 py-2 bg-primary flex items-center gap-1 rounded-lg`}>
+                      className={`px-4 sm:px-6 text-white py-2 bg-primary flex items-center gap-1 rounded-lg`}>
                       <Eye className="size-4" />
                       View Demo
                     </a>
