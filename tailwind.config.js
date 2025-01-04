@@ -9,12 +9,17 @@ module.exports = {
   theme: {
     extend: {
       container: {
-        center: "true",
-        padding: "2rem",
+        center: true, // يتمركز الحاوية
+        padding: {
+          DEFAULT: "1rem", // القيمة الافتراضية (للشاشات الصغيرة)
+          lg: "5rem", // للشاشات المتوسطة والكبيرة
+        },
         screens: {
-          lg: "1124px",
-          xl: "1124px",
-          "2xl": "1124px",
+          sm: "540px",
+          md: "720px",
+          lg: "960px",
+          xl: "1140px",
+          "2xl": "1320px",
         },
       },
       colors: {

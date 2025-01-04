@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="bg-background">
+    <footer className="bg-background pb-10">
       <div className="container space-y-8  py-16  lg:space-y-12 ">
         <div className="sm:flex sm:items-center sm:justify-between">
           <div className="text-primary">
